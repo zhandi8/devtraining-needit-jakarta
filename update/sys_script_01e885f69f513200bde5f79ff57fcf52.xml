@@ -35,6 +35,17 @@
     var isEmail = validateEmailAddress(current.u_requested_for_email);
     // If isEmail is false (email address syntax is not valid) do not save
     // the record.  Write an error message to the screen.
+	gs.error("The value of isEmail is " + isEmail);
+	gs.warn ("The value of isEmail is " + isEmail);
+	gs.info("The value of isEmail is " + isEmail);
+	gs.debug("The value of isEmail is " + isEmail);
+	try{
+		helloWorld();
+	}
+	catch(err){
+		jslog("A JavaScript runtime error "+err.message);
+	}
+
     if(isEmail == false){
         gs.addErrorMessage(current.u_requested_for_email + " is not a valid email address.  You must provide a valid email address.");
         current.setAbortAction(true);
@@ -44,20 +55,18 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-03-08 03:44:46</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>01e885f69f513200bde5f79ff57fcf52</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Email Address Syntax Validate</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_01e885f69f513200bde5f79ff57fcf52</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-03-08 03:44:46</sys_updated_on>
+        <sys_updated_on>2017-09-14 07:10:43</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

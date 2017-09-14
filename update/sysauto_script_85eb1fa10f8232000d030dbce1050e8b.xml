@@ -29,6 +29,8 @@ dueSoon.query();
 while(dueSoon.next()){
 	gs.info("NeedIt Task due soon record = " + dueSoon.number);
 	gs.eventQueue('x_58872_needit.dueSoonNeedItTasks',dueSoon,dueSoon.number,gs.getUserName());
+	gs.info("jackie test ");
+	
 }
 
 
@@ -36,17 +38,15 @@ while(dueSoon.next()){
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-04-11 00:00:44</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>85eb1fa10f8232000d030dbce1050e8b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Find NeedIt Tasks Due Soon</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysauto_script_85eb1fa10f8232000d030dbce1050e8b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-04-11 01:26:22</sys_updated_on>
+        <sys_updated_on>2017-09-14 07:30:19</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
